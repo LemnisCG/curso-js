@@ -17,5 +17,12 @@ var stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
 // };
 
 stations.map((station) =>{
-    console.log(station.split(';')[0].slice(0,3) + ': ' + station.split(';')[1] );    
+    console.log(station.slice(0,3) + ': ' + station.split(';')[1] );    
 });
+
+for(let i = 0; i < stations.length; i++){
+    const input = stations[i];
+    const threeLetters = input.slice(0,3);
+    const stationName = input.split(';')[1];
+    console.log(`${threeLetters}: ${stationName}` );
+}
