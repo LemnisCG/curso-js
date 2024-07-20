@@ -9,13 +9,6 @@ var stations = ['MAN675847583748sjt567654;Manchester Piccadilly',
     'SYB4f65hf75f736463;Stalybridge',
     'HUD5767ghtyfyr4536dh45dg45dg3;Huddersfield'];
 
-// for(let i = 0; i < stations.length; i++){
-//     const input = stations[i];
-//     const firstWord = input.slice(0,3);
-//     const stationsName = input.split(20);
-//     console.log({firstWord,stationsName})
-// };
-
 stations.map((station) =>{
     console.log(station.slice(0,3) + ': ' + station.split(';')[1] );    
 });
