@@ -11,7 +11,7 @@ function isPrime(num) {
 
 for(let i = 500; i >= 2; i--){
     if (isPrime(i)){
-        if (para.textContent.length > 0) {
+        if (para.textContent. length > 0) {
             para.textContent += ', ';
         }
         para.textContent += i;
